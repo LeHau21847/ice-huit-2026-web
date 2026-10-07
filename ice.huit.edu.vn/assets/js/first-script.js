@@ -89,3 +89,5 @@ function importJsBlock(text, position) {
     if (position == "head")
         document.head.appendChild(element);
 }
+function translateLanguage(key) { return key; }
+
