@@ -14,6 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Serve Frontend
 app.use(express.static(path.join(__dirname, 'ice.huit.edu.vn')));
+app.use('/cdnjs.cloudflare.com', express.static(path.join(__dirname, 'cdnjs.cloudflare.com')));
 
 // Mock Database for Login
 const users = [
