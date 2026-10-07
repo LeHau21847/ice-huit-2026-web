@@ -1,0 +1,49 @@
+HTTrack3.50-5 launched on Thu, 08 Oct 2026 02:14:21 at https://ice.huit.edu.vn/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2%f#f -F "Mozilla/5.0 (compatible; HTTrack; +https://www.httrack.com/)" -%F "<!-- Mirrored from {url} by HTTrack Website Copier/3.x [XR&CO], {date} -->" -%l "en, *" https://ice.huit.edu.vn/ -O1 "E:\Web_ICE_HUIT\Web_ICE_HUIT" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+02:15:18	Error: 	"Not Found" (404) at link https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/vendor/owlcarousel/css/owl.video.play.png (from https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/vendor/owlcarousel/css/owl.carousel.min.css)
+02:15:18	Error: 	"Not Found" (404) at link https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/img/vertical-lines.svg (from https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/css/theme.css)
+02:15:18	Error: 	"Not Found" (404) at link https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/img/vertical-lines-light.svg (from https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/css/theme.css)
+02:15:18	Error: 	"Not Found" (404) at link https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/img/home/home-concept-dark.png (from https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/css/theme.css)
+02:15:18	Error: 	"Not Found" (404) at link https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/img/home/home-concept-item-dark.png (from https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/css/theme.css)
+02:15:18	Error: 	"Not Found" (404) at link https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/img/home/home-concept-icons-dark.png (from https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/css/theme.css)
+02:15:18	Error: 	"Not Found" (404) at link https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/img/arrows-dark.png (from https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/css/theme.css)
+02:15:18	Error: 	"Not Found" (404) at link https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/img/arrows.png (from https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/css/theme-elements.css)
+02:15:18	Error: 	"Not Found" (404) at link https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/img/patterns/worn_dots.png (from https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/css/theme-elements.css)
+02:15:18	Error: 	"Not Found" (404) at link https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/img/patterns/az_subtle.png (from https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/css/theme-elements.css)
+02:15:18	Error: 	"Not Found" (404) at link https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/img/flags.png (from https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/css/theme-elements.css)
+02:15:18	Error: 	"Not Found" (404) at link https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/img/icons/icons.png (from https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/css/theme-elements.css)
+02:15:18	Error: 	"Not Found" (404) at link https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/css/img/lazy.png (from https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/css/theme-elements.css)
+02:15:18	Error: 	"Not Found" (404) at link https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/img/pencil-blue-line.png (from https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/css/theme-elements.css)
+02:15:18	Error: 	"Not Found" (404) at link https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/img/pencil-blue-line-dark.png (from https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/css/theme-elements.css)
+02:15:18	Error: 	"Not Found" (404) at link https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/img/pencil-blue-line-2.png (from https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/css/theme-elements.css)
+02:15:18	Error: 	"Not Found" (404) at link https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/img/pencil-blue-line-2-dark.png (from https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/css/theme-elements.css)
+02:15:18	Error: 	"Not Found" (404) at link https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/img/particle-dot.svg (from https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/css/theme-elements.css)
+02:15:18	Error: 	"Not Found" (404) at link https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/img/overlay-dot.png (from https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/css/theme-elements.css)
+02:15:18	Error: 	"Not Found" (404) at link https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/img/map.png (from https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/css/theme-elements.css)
+02:15:18	Error: 	"Not Found" (404) at link https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/img/home/home-concept.png (from https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/css/theme-elements.css)
+02:15:18	Error: 	"Not Found" (404) at link https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/img/home/home-concept-item.png (from https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/css/theme-elements.css)
+02:15:18	Error: 	"Not Found" (404) at link https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/img/home/home-concept-icons.png (from https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/css/theme-elements.css)
+02:15:18	Error: 	"Not Found" (404) at link https://ice.huit.edu.vn/bai-viet/nop-bai/areas/tmtho.cms.web.module.languageswitch/assets/img/united-kingdom-flag-icon.png (from https://ice.huit.edu.vn/bai-viet/nop-bai/huong-dan-dang-ky-tai-khoan-va-nop-bai-bao-11)
+02:15:18	Error: 	"Not Found" (404) at link https://ice.huit.edu.vn/bai-viet/nop-bai/areas/tmtho.cms.web.module.languageswitch/assets/img/vietnam-flag-icon.png (from https://ice.huit.edu.vn/bai-viet/nop-bai/huong-dan-dang-ky-tai-khoan-va-nop-bai-bao-11)
+02:15:19	Error: 	"Not Found" (404) at link https://ice.huit.edu.vn/user/login/areas/tmtho.cms.web.module.languageswitch/assets/img/united-kingdom-flag-icon.png (from https://ice.huit.edu.vn/user/login/index)
+02:15:19	Error: 	"Not Found" (404) at link https://ice.huit.edu.vn/user/login/areas/tmtho.cms.web.module.languageswitch/assets/img/vietnam-flag-icon.png (from https://ice.huit.edu.vn/user/login/index)
+02:15:19	Error: 	"Not Found" (404) at link https://ice.huit.edu.vn/ice/user/areas/tmtho.cms.web.module.languageswitch/assets/img/united-kingdom-flag-icon.png (from https://ice.huit.edu.vn/ice/user/registry)
+02:15:19	Error: 	"Not Found" (404) at link https://ice.huit.edu.vn/ice/user/areas/tmtho.cms.web.module.languageswitch/assets/img/vietnam-flag-icon.png (from https://ice.huit.edu.vn/ice/user/registry)
+02:15:19	Error: 	"Not Found" (404) at link https://ice.huit.edu.vn/user/user/areas/tmtho.cms.web.module.languageswitch/assets/img/united-kingdom-flag-icon.png (from https://ice.huit.edu.vn/user/user/resend-activation-code)
+02:15:19	Error: 	"Not Found" (404) at link https://ice.huit.edu.vn/user/user/areas/tmtho.cms.web.module.languageswitch/assets/img/vietnam-flag-icon.png (from https://ice.huit.edu.vn/user/user/resend-activation-code)
+02:15:19	Error: 	"Not Found" (404) at link https://ice.huit.edu.vn/bai-viet/trang-chu/areas/tmtho.cms.web.module.languageswitch/assets/img/united-kingdom-flag-icon.png (from https://ice.huit.edu.vn/bai-viet/trang-chu/hoi-thao-quoc-te-ve-kinh-te-lan-thu-3-–-ice-2026-the-3rd-international-conference-on-economics-3)
+02:15:19	Error: 	"Not Found" (404) at link https://ice.huit.edu.vn/bai-viet/trang-chu/areas/tmtho.cms.web.module.languageswitch/assets/img/vietnam-flag-icon.png (from https://ice.huit.edu.vn/bai-viet/trang-chu/hoi-thao-quoc-te-ve-kinh-te-lan-thu-3-–-ice-2026-the-3rd-international-conference-on-economics-3)
+02:15:19	Error: 	"Not Found" (404) at link https://ice.huit.edu.vn/bai-viet/hoi-thao/areas/tmtho.cms.web.module.languageswitch/assets/img/united-kingdom-flag-icon.png (from https://ice.huit.edu.vn/bai-viet/hoi-thao/dien-gia-2)
+02:15:19	Error: 	"Not Found" (404) at link https://ice.huit.edu.vn/bai-viet/hoi-thao/areas/tmtho.cms.web.module.languageswitch/assets/img/vietnam-flag-icon.png (from https://ice.huit.edu.vn/bai-viet/hoi-thao/dien-gia-2)
+02:15:19	Error: 	"Not Found" (404) at link https://ice.huit.edu.vn/bai-viet/khong-chuyen-muc/areas/tmtho.cms.web.module.languageswitch/assets/img/united-kingdom-flag-icon.png (from https://ice.huit.edu.vn/bai-viet/khong-chuyen-muc/nha-to-chuc-17)
+02:15:19	Error: 	"Not Found" (404) at link https://ice.huit.edu.vn/bai-viet/khong-chuyen-muc/areas/tmtho.cms.web.module.languageswitch/assets/img/vietnam-flag-icon.png (from https://ice.huit.edu.vn/bai-viet/khong-chuyen-muc/nha-to-chuc-17)
+02:15:19	Error: 	"Not Found" (404) at link https://ice.huit.edu.vn/Error pJS - No image.src (from https://ice.huit.edu.vn/areas/tmtho.cms.web.theme.ice/assets/vendor/particles/particles.min.js)
+
+HTTrack Website Copier/3.50-5 mirror complete in 58 seconds : 159 links scanned, 120 files written (68242814 bytes overall) [67470043 bytes received at 1163276 bytes/sec], 1165267 bytes transferred using HTTP compression in 21 files, ratio 23%, 1.1 requests per connection
+(38 errors, 0 warnings, 0 messages)
