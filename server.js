@@ -43,6 +43,24 @@ app.post('/com_user/user/ajax_login', upload.none(), (req, res) => {
     }
 });
 
+app.post('/com_ice/user/ajax_registry', upload.none(), (req, res) => {
+    res.json({
+        successMessage: "Đăng ký thành công",
+        errorMessage: ""
+    });
+});
+
+app.post('/com_ice/conferencearticle/ajax_submission', upload.any(), (req, res) => {
+    res.json({
+        successMessage: "Nộp bài thành công",
+        errorMessage: []
+    });
+});
+
+app.post('/com_user/user/ajax_exist_email', upload.none(), (req, res) => {
+    res.send("false"); // meaning email does not exist, so validation passes
+});
+
 // Start Server
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);

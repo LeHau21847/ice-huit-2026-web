@@ -1,4 +1,4 @@
-﻿
+
 <!DOCTYPE html>
 <html>
 
@@ -152,12 +152,83 @@
 <div class="conference-article-submission mt-5 mb-5">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 mx-auto">
+            <div class="col-lg-8 mx-auto" id="unauthenticated-view">
                     <p class="text-center">Vui lòng <a class="fw-bold text-lowercase" href="ice/user/registry.html">Đăng ký</a> hoặc <a class="fw-bold text-lowercase" href="user/login/index.html">đăng nhập</a> để nộp bài.</p>
+            </div>
+            <div class="col-lg-10 mx-auto" id="authenticated-view" style="display: none;">
+                <form id="submission_frmRegistry" class="p-4 bg-light border rounded">
+                    <h3 class="form-title text-center text-uppercase fw-bold mb-4">GỬI TÓM TẮT BÀI BÁO</h3>
+                    <div class="row g-4">
+                        <div class="col-md-12">
+                            <label class="form-label fw-bold">Tên bài báo <span class="text-danger">*</span></label>
+                            <input type="text" name="submission_title" class="form-control" />
+                        </div>
+                        <div class="col-md-12">
+                            <label class="form-label fw-bold">Phân ban <span class="text-danger">*</span></label>
+                            <input type="text" name="submission_division" class="form-control" />
+                        </div>
+                        <div class="col-md-12">
+                            <label class="form-label fw-bold">Thông tin thành viên <span class="text-danger">*</span></label>
+                            <div>
+                                <button type="button" class="btn btn-success btn-sm mb-3" id="submission_btnAddJoiner">+ Thêm thành viên</button>
+                            </div>
+                            <div class="js-load-joiners"></div>
+                            <div class="js-joiners-message text-danger"></div>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="form-label fw-bold">Nhập tóm tắt</label>
+                            <textarea name="submission_summaryArticleText" class="form-control"></textarea>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="form-label fw-bold">Đính kèm tóm tắt bài báo <span class="text-danger">*</span></label>
+                            <div class="input-group">
+                                <input type="text" name="submission_summaryArticle" class="form-control" placeholder="Chỉ nhận tập tin có tên mở rộng: .doc|.docx. Tên tập tin không cho phép các ký tự: \/:*?&quot;<>|" readonly />
+                                <label class="btn btn-primary mb-0" for="submission_fileSummaryArticle">
+                                    <i class="fas fa-file-upload"></i>
+                                </label>
+                                <input type="file" id="submission_fileSummaryArticle" class="d-none" accept=".doc,.docx" />
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="form-label fw-bold">Đính kèm bài báo đầy đủ</label>
+                            <div class="input-group">
+                                <input type="text" name="submission_fullArticle" class="form-control" placeholder="Chỉ nhận tập tin có tên mở rộng: .doc|.docx. Tên tập tin không cho phép các ký tự: \/:*?&quot;<>|" readonly />
+                                <label class="btn btn-primary mb-0" for="submission_fileFullArticle">
+                                    <i class="fas fa-file-upload"></i>
+                                </label>
+                                <input type="file" id="submission_fileFullArticle" class="d-none" accept=".doc,.docx" />
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="submission_ckbCommit">
+                                <label class="form-check-label" for="submission_ckbCommit">
+                                    Tôi/chúng tôi cam đoan những nội dung được ghi trong hồ sơ là đúng sự thật và do chính nhóm thực hiện.
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-12 text-center mt-4">
+                            <button type="button" class="btn btn-primary px-5" id="submission_btnRegistry" disabled>Gửi</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="notification p-5 text-center visually-hidden bg-light border rounded">
+                    <i class="fas fa-check-circle text-success mb-3" style="font-size: 80px;"></i>
+                    <h2 class="fw-bold text-uppercase mt-2">XIN CHÚC MỪNG!</h2>
+                    <p>Bạn đã nộp bài thành công. Vui lòng theo dõi thông tin tại hộp thư.</p>
+                </div>
             </div>
         </div>
     </div>
 </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        if (localStorage.getItem("isLoggedIn") === "true" || window.location.search.includes("logged_in=true")) {
+            document.getElementById("unauthenticated-view").style.display = "none";
+            document.getElementById("authenticated-view").style.display = "block";
+        }
+    });
+</script>
 
                                 </main>
     </div>

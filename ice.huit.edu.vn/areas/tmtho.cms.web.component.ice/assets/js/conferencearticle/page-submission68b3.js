@@ -1,4 +1,4 @@
-﻿$(function () {
+$(function () {
     "use strict";
     $.validator.addMethod("checkExpressionEmail", function (value, element) { return ICE.ConferenceArticle.Validation.checkExpressionEmail(value, element) }, translateLanguage("PleaseEnterEmail") + "!");
     $.validator.addMethod("checkExpressionPhone", function (value, element) { return ICE.ConferenceArticle.Validation.checkExpressionPhone(value, element) }, translateLanguage("PleaseEnterPhoneNumber") + "!");
@@ -183,14 +183,24 @@
                 <input type='text' name='submission_joinerName' class='form-control' />
             </div>
             <div class='col-lg-6'>
-                <label class='form-label'>${translateLanguage("PhoneNumber")} <span class='text-danger'>*</span></label>
-                <input type='text' class='form-control' name='submission_joinerPhone' />
+                <label class='form-label'>Ngày sinh <span class='text-danger'>*</span></label>
+                <input type='date' name='submission_joinerDateOfBirth' class='form-control' />
             </div>
         </div>
         <div class='row mb-3'>
             <div class='col-lg-6'>
+                <label class='form-label'>${translateLanguage("PhoneNumber")} <span class='text-danger'>*</span></label>
+                <input type='text' class='form-control' name='submission_joinerPhone' />
+            </div>
+            <div class='col-lg-6'>
                 <label class='form-label'>Email <span class='text-danger'>*</span></label>
                 <input type='text' class='form-control' name='submission_joinerEmail' />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-lg-6">
+                <label class="form-label">${translateLanguage("NameOfUniversity")}/${translateLanguage("Institute")}/${translateLanguage("Faculty")}</label>
+                <input type="text" class="form-control" name="submission_joinerSchool" />
             </div>
             <div class='col-lg-6'>
                 <label class="form-label">${translateLanguage("Role")} <span class='text-danger'>*</span></label>
@@ -201,12 +211,6 @@
                     <option value="4">${translateLanguage("Member")}</option>
                 </select>
                 <div class="form-text text-danger fw-bold">${translateLanguage("Note")}: ${translateLanguage("NoteRole")}.</div>
-            </div>
-        </div>
-        <div class="row mb-3">
-            <div class="col-lg-12">
-                <label class="form-label">${translateLanguage("NameOfUniversity")}/${translateLanguage("Institute")}/${translateLanguage("Faculty")}</label>
-                <input type="text" class="form-control" name="submission_joinerSchool" />
             </div>
         </div>
         <hr />
