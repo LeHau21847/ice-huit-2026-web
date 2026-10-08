@@ -500,7 +500,36 @@
             $(".horizontal-image-scrollbar .scroller").simplyScroll();
         });
     </script>
-<script>if (window.location.search.includes(logged_in=true)) { document.querySelectorAll().forEach(a => { if (a.href && a.href.includes(cong-nop-bai.html)) a.href = a.href + (a.href.includes(?) ? & : ?) + logged_in=true; }); }</script></body>
+<script>if (window.location.search.includes(logged_in=true)) { document.querySelectorAll().forEach(a => { if (a.href && a.href.includes(cong-nop-bai.html)) a.href = a.href + (a.href.includes(?) ? & : ?) + logged_in=true; }); }</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.search.includes("logged_in=true")) {
+            localStorage.setItem("isLoggedIn", "true");
+        }
+        
+        let isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
+
+        if (isLoggedIn) {
+            let memberMenu = document.querySelector('.member-menu .dropdown-menu');
+            if (memberMenu) {
+                memberMenu.innerHTML = '<li><a class="dropdown-item" href="#" id="btn-logout">Đăng xuất</a></li>';
+                document.getElementById('btn-logout').addEventListener('click', function(e) {
+                    e.preventDefault();
+                    localStorage.removeItem('isLoggedIn');
+                    window.history.replaceState({}, document.title, window.location.pathname);
+                    window.location.reload();
+                });
+            }
+            
+            document.querySelectorAll('a').forEach(a => {
+                if (a.href && a.href.includes('cong-nop-bai.html') && !a.href.includes('logged_in=true')) {
+                    a.href = a.href + (a.href.includes('?') ? '&' : '?') + 'logged_in=true';
+                }
+            });
+        }
+    });
+</script>
+</body>
 
 <!-- Mirrored from https://ice.huit.edu.vn/ by HTTrack Website Copier/3.x [XR&CO], Wed, 07 Oct 2026 19:14:48 GMT -->
 </html>
