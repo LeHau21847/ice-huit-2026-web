@@ -155,7 +155,7 @@
             <div class="col-lg-8 mx-auto" id="unauthenticated-view">
                     <p class="text-center">Vui lòng <a class="fw-bold text-lowercase" href="ice/user/registry.html">Đăng ký</a> hoặc <a class="fw-bold text-lowercase" href="user/login/index.html">đăng nhập</a> để nộp bài.</p>
             </div>
-            <div class="col-lg-10 mx-auto" id="authenticated-view" style="position: absolute; visibility: hidden; z-index: -1;">
+            <div class="col-lg-10 mx-auto" id="authenticated-view">
                 <form id="submission_frmRegistry" class="p-4 bg-light border rounded">
                     <h3 class="form-title text-center text-uppercase fw-bold mb-4">GỬI TÓM TẮT BÀI BÁO</h3>
                     <div class="row g-4">
@@ -223,12 +223,12 @@
 </div>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
-        if (localStorage.getItem("isLoggedIn") === "true" || window.location.search.includes("logged_in=true")) {
+        if (!(localStorage.getItem("isLoggedIn") === "true" || window.location.search.includes("logged_in=true"))) {
+            document.getElementById("authenticated-view").style.display = "none";
+            document.getElementById("unauthenticated-view").style.display = "block";
+        } else {
             document.getElementById("unauthenticated-view").style.display = "none";
-            let authView = document.getElementById("authenticated-view");
-            authView.style.position = "relative";
-            authView.style.visibility = "visible";
-            authView.style.zIndex = "auto";
+            document.getElementById("authenticated-view").style.display = "block";
         }
     });
 </script>
